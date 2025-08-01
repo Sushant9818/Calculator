@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Gochi+Hand&family=Playpen+Sans+Hebrew:wght@100..800&family=VT323&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    background-color: rgb(72, 72, 72);
+}
+h1{
+    font-size: 4.5rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem;  
+}
+
+.calculator-body{
+    background-color: black;
+    box-shadow: 5px 4px 0 3px green;
+    color: white;
+    width:fit-content;
+    border-radius: 0.5rem;
+    padding:0.5rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+#display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgb(39, 39, 39);
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(4, 211, 4);
+    font-size:3.5rem;
+    height: 7rem;
+    padding: 0.5em 0.2em 0.2em 0.5em;
+    margin: 0.4rem;
+    width:auto;
+    border-radius: 0.5rem;
+}
+
+.row{
+    display: flex;
+}
+#last-row{
+    justify-content: center;
+}
+
+.button{
+    width: 25px;
+    height: 25px;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    align-content: center;
+    border-radius: 0.5rem;
+    background-color: rgb(39, 39, 39);
+    transition: background-color 0.2s ease;
+}
+
+.button:hover{
+    background-color:rgb(71, 70, 70);
+    cursor: pointer;
+}
+
+#clear, #delete{
+    background-color: rgb(235, 20, 20);
+    transition: background-color 0.2s ease;
+}
+
+#clear:hover, #delete:hover{
+    background-color:rgb(233, 89, 89);
+}
+
+#divide, #multiply, #subtract, #add{
+    background-color: rgb(255, 174, 0);
+    transition: background-color 0.2s ease;
+}
+
+#divide:hover, #multiply:hover, #subtract:hover, #add:hover{
+    background-color: rgb(244, 193, 82);
+}
+
+#equal{
+    background-color: rgb(17, 148, 3);
+    transition: background-color 0.2s ease;
+}
+#equal:hover{
+    background-color: rgb(93, 192, 82);
+}   
